@@ -11,19 +11,17 @@ class MainActivity : BaseActivity() {
     }
 
     override fun initData() {
+
     }
 
     override fun initView() {
 
         tv_onclick.onClick {
-
             href("http://www.baidu.com")
             toast("点击了")
-            dialog?.cancel()
         }
+
     }
-
-
 
 
 }

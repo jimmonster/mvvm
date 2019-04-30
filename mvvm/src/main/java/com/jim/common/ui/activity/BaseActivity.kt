@@ -1,6 +1,7 @@
 package com.jim.common.ui.activity
 
 import android.app.Activity
+import android.arch.lifecycle.ViewModelProviders
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
@@ -9,6 +10,7 @@ import android.view.Window
 import android.view.WindowManager
 import com.jim.common.constant.Constant
 import com.jim.common.ui.web.BrowserActivity
+import com.jim.common.vm.viewmodel.CommonViewModel
 import com.zyao89.view.zloading.ZLoadingDialog
 import com.zyao89.view.zloading.Z_TYPE
 import org.jetbrains.anko.AnkoLogger
@@ -21,18 +23,25 @@ import org.jetbrains.anko.startActivity
  *
  */
 abstract class BaseActivity : AppCompatActivity(), AnkoLogger {
-
+    var viewModel: CommonViewModel? = null
     var dialog: ZLoadingDialog? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         init()
         setContentView(initLayoutID())
+        initViewModel()
         initData()
         initView()
         initDialog()
         initEvent()
 
 
+    }
+
+    private fun initViewModel() {
+        viewModel = ViewModelProviders.of(this).get(
+            CommonViewModel::class.java
+        )
     }
 
     /**

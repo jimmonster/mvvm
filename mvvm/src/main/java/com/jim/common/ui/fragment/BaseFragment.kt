@@ -1,11 +1,13 @@
 package com.jim.common.ui.fragment
 
+import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
+import com.jim.common.vm.viewmodel.CommonViewModel
 import org.jetbrains.anko.AnkoLogger
 
 /**
@@ -14,28 +16,40 @@ import org.jetbrains.anko.AnkoLogger
  * @description :
  *
  */
-abstract class  BaseFragment: Fragment(),AnkoLogger {
+abstract class BaseFragment : Fragment(), AnkoLogger {
     /**
      * 切换刷新
      */
     protected var isCreated = false
-
+    var viewModel: CommonViewModel? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         // 标记
-        isCreated=true
+        isCreated = true
     }
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(initLayoutID(),container,false)
+        return inflater.inflate(initLayoutID(), container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        initView(view)
+        initViewModel()
         initData()
+        initView(view)
+
+
         initEvent()
 
+    }
+
+    private fun initViewModel() {
+        viewModel = activity?.let {
+            ViewModelProviders.of(it).get(
+                CommonViewModel::class.java
+            )
+        }
     }
 
     override fun setUserVisibleHint(isVisibleToUser: Boolean) {
@@ -50,7 +64,6 @@ abstract class  BaseFragment: Fragment(),AnkoLogger {
         }
 
     }
-
 
 
     abstract fun initLayoutID(): Int

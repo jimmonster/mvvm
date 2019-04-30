@@ -1,4 +1,4 @@
-
+package com.jim.common.ui.widgets;
 
 import android.app.Dialog;
 import android.content.Context;
