@@ -12,7 +12,7 @@ import com.lzy.okgo.model.Response
  * @description :数据处理仓库
  *
  */
-class CommonRepository {
+class CommonRepository : BaseRepository(){
     var getResponse = MutableLiveData<BaseBean>()
     fun getResponse(): MutableLiveData<BaseBean> {
         return getResponse

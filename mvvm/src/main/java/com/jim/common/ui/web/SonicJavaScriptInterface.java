@@ -10,7 +10,7 @@ import org.json.JSONObject;
 /**
  * @author :  Jim
  * @date :  2019/3/29
- * @description :
+ * @description :js互调
  */
 public class SonicJavaScriptInterface {
 

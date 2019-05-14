@@ -1,7 +1,6 @@
 package com.jim.common.vm.viewmodel
 
 import android.arch.lifecycle.MutableLiveData
-import android.arch.lifecycle.ViewModel
 import com.jim.common.model.bean.BaseBean
 import com.jim.common.vm.repository.CommonRepository
 
@@ -11,7 +10,7 @@ import com.jim.common.vm.repository.CommonRepository
  * @description :数据处理共同类,可以直接在这一个类中请求网络数据，但是放在CommonRepository中做网络请求效果更好，CommonViewModel专注于数据的处理
  *
  */
-class CommonViewModel : ViewModel() {
+class CommonViewModel : BaseViewModel() {
     var rePo = CommonRepository()
 
 
