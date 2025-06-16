@@ -17,15 +17,15 @@ dns:
         - https://223.5.5.5/dns-query
         - https://dns.alidns.com/dns-query
 proxies:
-    - name: 到期时间:2025-06-09 11:54:20
+    - name: 到期时间:2027-05-18 09:07:39
       type: ss
-      server: 211.99.115.167
-      port: 55620
+      server: 211.99.115.173
+      port: 6815
       network: ws
       udp: true
       alterId: 0
       cipher: chacha20-ietf-poly1305
-      password: b6701f6f-22e8-4f27-8e73-13f42b071957
+      password: 6232e590-3a2c-428a-b8e9-9ce24fc7ee7b
       skip-cert-verify: true
       ws-opts:
         path: /
@@ -33,15 +33,15 @@ proxies:
             Host: ""
         max-early-data: 0
         early-data-header-name: ""
-    - name: 重置时间:2025-06-10 23:59:59
+    - name: 重置时间:2025-06-17 00:00:01
       type: ss
-      server: 211.99.115.167
-      port: 55620
+      server: 211.99.115.173
+      port: 6815
       network: ws
       udp: true
       alterId: 0
       cipher: chacha20-ietf-poly1305
-      password: b6701f6f-22e8-4f27-8e73-13f42b071957
+      password: 6232e590-3a2c-428a-b8e9-9ce24fc7ee7b
       skip-cert-verify: true
       ws-opts:
         path: /
@@ -49,15 +49,399 @@ proxies:
             Host: ""
         max-early-data: 0
         early-data-header-name: ""
-    - name: 剩余流量:10.0 GB
+    - name: 剩余流量:100.0 GB
       type: ss
-      server: 211.99.115.167
-      port: 55620
+      server: 211.99.115.173
+      port: 6815
       network: ws
       udp: true
       alterId: 0
       cipher: chacha20-ietf-poly1305
-      password: b6701f6f-22e8-4f27-8e73-13f42b071957
+      password: 6232e590-3a2c-428a-b8e9-9ce24fc7ee7b
+      skip-cert-verify: true
+      ws-opts:
+        path: /
+        headers:
+            Host: ""
+        max-early-data: 0
+        early-data-header-name: ""
+    - name: 香港节点1
+      type: ss
+      server: 211.99.115.173
+      port: 6815
+      network: ws
+      udp: true
+      alterId: 0
+      cipher: chacha20-ietf-poly1305
+      password: 6232e590-3a2c-428a-b8e9-9ce24fc7ee7b
+      skip-cert-verify: true
+      ws-opts:
+        path: /
+        headers:
+            Host: ""
+        max-early-data: 0
+        early-data-header-name: ""
+    - name: 香港节点2
+      type: ss
+      server: 211.99.115.174
+      port: 8614
+      network: ws
+      udp: true
+      alterId: 0
+      cipher: chacha20-ietf-poly1305
+      password: 6232e590-3a2c-428a-b8e9-9ce24fc7ee7b
+      skip-cert-verify: true
+      ws-opts:
+        path: /
+        headers:
+            Host: ""
+        max-early-data: 0
+        early-data-header-name: ""
+    - name: 香港节点3
+      type: ss
+      server: 211.99.115.175
+      port: 14829
+      network: ws
+      udp: true
+      alterId: 0
+      cipher: chacha20-ietf-poly1305
+      password: 6232e590-3a2c-428a-b8e9-9ce24fc7ee7b
+      skip-cert-verify: true
+      ws-opts:
+        path: /
+        headers:
+            Host: ""
+        max-early-data: 0
+        early-data-header-name: ""
+    - name: 香港节点4
+      type: ss
+      server: 211.99.115.177
+      port: 42947
+      network: ws
+      udp: true
+      alterId: 0
+      cipher: chacha20-ietf-poly1305
+      password: 6232e590-3a2c-428a-b8e9-9ce24fc7ee7b
+      skip-cert-verify: true
+      ws-opts:
+        path: /
+        headers:
+            Host: ""
+        max-early-data: 0
+        early-data-header-name: ""
+    - name: 香港节点5
+      type: ss
+      server: 211.99.115.178
+      port: 9365
+      network: ws
+      udp: true
+      alterId: 0
+      cipher: chacha20-ietf-poly1305
+      password: 6232e590-3a2c-428a-b8e9-9ce24fc7ee7b
+      skip-cert-verify: true
+      ws-opts:
+        path: /
+        headers:
+            Host: ""
+        max-early-data: 0
+        early-data-header-name: ""
+    - name: 香港节点6
+      type: ss
+      server: 211.99.115.179
+      port: 30147
+      network: ws
+      udp: true
+      alterId: 0
+      cipher: chacha20-ietf-poly1305
+      password: 6232e590-3a2c-428a-b8e9-9ce24fc7ee7b
+      skip-cert-verify: true
+      ws-opts:
+        path: /
+        headers:
+            Host: ""
+        max-early-data: 0
+        early-data-header-name: ""
+    - name: 日本节点1
+      type: ss
+      server: 211.99.115.187
+      port: 30304
+      network: ws
+      udp: true
+      alterId: 0
+      cipher: chacha20-ietf-poly1305
+      password: 6232e590-3a2c-428a-b8e9-9ce24fc7ee7b
+      skip-cert-verify: true
+      ws-opts:
+        path: /
+        headers:
+            Host: ""
+        max-early-data: 0
+        early-data-header-name: ""
+    - name: 日本节点2
+      type: ss
+      server: 211.99.115.186
+      port: 47317
+      network: ws
+      udp: true
+      alterId: 0
+      cipher: chacha20-ietf-poly1305
+      password: 6232e590-3a2c-428a-b8e9-9ce24fc7ee7b
+      skip-cert-verify: true
+      ws-opts:
+        path: /
+        headers:
+            Host: ""
+        max-early-data: 0
+        early-data-header-name: ""
+    - name: 美国节点1
+      type: ss
+      server: 211.99.115.181
+      port: 38775
+      network: ws
+      udp: true
+      alterId: 0
+      cipher: chacha20-ietf-poly1305
+      password: 6232e590-3a2c-428a-b8e9-9ce24fc7ee7b
+      skip-cert-verify: true
+      ws-opts:
+        path: /
+        headers:
+            Host: ""
+        max-early-data: 0
+        early-data-header-name: ""
+    - name: 美国节点2
+      type: ss
+      server: 211.99.115.176
+      port: 35362
+      network: ws
+      udp: true
+      alterId: 0
+      cipher: chacha20-ietf-poly1305
+      password: 6232e590-3a2c-428a-b8e9-9ce24fc7ee7b
+      skip-cert-verify: true
+      ws-opts:
+        path: /
+        headers:
+            Host: ""
+        max-early-data: 0
+        early-data-header-name: ""
+    - name: 新加坡节点1
+      type: ss
+      server: 211.99.115.162
+      port: 62461
+      network: ws
+      udp: true
+      alterId: 0
+      cipher: chacha20-ietf-poly1305
+      password: 6232e590-3a2c-428a-b8e9-9ce24fc7ee7b
+      skip-cert-verify: true
+      ws-opts:
+        path: /
+        headers:
+            Host: ""
+        max-early-data: 0
+        early-data-header-name: ""
+    - name: 新加坡节点2
+      type: ss
+      server: 211.99.115.163
+      port: 43297
+      network: ws
+      udp: true
+      alterId: 0
+      cipher: chacha20-ietf-poly1305
+      password: 6232e590-3a2c-428a-b8e9-9ce24fc7ee7b
+      skip-cert-verify: true
+      ws-opts:
+        path: /
+        headers:
+            Host: ""
+        max-early-data: 0
+        early-data-header-name: ""
+    - name: 新加坡节点3
+      type: ss
+      server: 211.99.115.164
+      port: 59006
+      network: ws
+      udp: true
+      alterId: 0
+      cipher: chacha20-ietf-poly1305
+      password: 6232e590-3a2c-428a-b8e9-9ce24fc7ee7b
+      skip-cert-verify: true
+      ws-opts:
+        path: /
+        headers:
+            Host: ""
+        max-early-data: 0
+        early-data-header-name: ""
+    - name: 新加坡节点4
+      type: ss
+      server: 211.99.115.165
+      port: 17789
+      network: ws
+      udp: true
+      alterId: 0
+      cipher: chacha20-ietf-poly1305
+      password: 6232e590-3a2c-428a-b8e9-9ce24fc7ee7b
+      skip-cert-verify: true
+      ws-opts:
+        path: /
+        headers:
+            Host: ""
+        max-early-data: 0
+        early-data-header-name: ""
+    - name: 德国节点1
+      type: ss
+      server: 211.99.115.166
+      port: 9265
+      network: ws
+      udp: true
+      alterId: 0
+      cipher: chacha20-ietf-poly1305
+      password: 6232e590-3a2c-428a-b8e9-9ce24fc7ee7b
+      skip-cert-verify: true
+      ws-opts:
+        path: /
+        headers:
+            Host: ""
+        max-early-data: 0
+        early-data-header-name: ""
+    - name: 德国节点2
+      type: ss
+      server: 211.99.115.168
+      port: 21098
+      network: ws
+      udp: true
+      alterId: 0
+      cipher: chacha20-ietf-poly1305
+      password: 6232e590-3a2c-428a-b8e9-9ce24fc7ee7b
+      skip-cert-verify: true
+      ws-opts:
+        path: /
+        headers:
+            Host: ""
+        max-early-data: 0
+        early-data-header-name: ""
+    - name: 德国节点3
+      type: ss
+      server: 211.99.115.169
+      port: 11657
+      network: ws
+      udp: true
+      alterId: 0
+      cipher: chacha20-ietf-poly1305
+      password: 6232e590-3a2c-428a-b8e9-9ce24fc7ee7b
+      skip-cert-verify: true
+      ws-opts:
+        path: /
+        headers:
+            Host: ""
+        max-early-data: 0
+        early-data-header-name: ""
+    - name: 德国节点4
+      type: ss
+      server: 211.99.115.170
+      port: 7059
+      network: ws
+      udp: true
+      alterId: 0
+      cipher: chacha20-ietf-poly1305
+      password: 6232e590-3a2c-428a-b8e9-9ce24fc7ee7b
+      skip-cert-verify: true
+      ws-opts:
+        path: /
+        headers:
+            Host: ""
+        max-early-data: 0
+        early-data-header-name: ""
+    - name: 德国节点5
+      type: ss
+      server: 211.99.115.171
+      port: 28506
+      network: ws
+      udp: true
+      alterId: 0
+      cipher: chacha20-ietf-poly1305
+      password: 6232e590-3a2c-428a-b8e9-9ce24fc7ee7b
+      skip-cert-verify: true
+      ws-opts:
+        path: /
+        headers:
+            Host: ""
+        max-early-data: 0
+        early-data-header-name: ""
+    - name: 韩国节点1
+      type: ss
+      server: 211.99.115.182
+      port: 44209
+      network: ws
+      udp: true
+      alterId: 0
+      cipher: chacha20-ietf-poly1305
+      password: 6232e590-3a2c-428a-b8e9-9ce24fc7ee7b
+      skip-cert-verify: true
+      ws-opts:
+        path: /
+        headers:
+            Host: ""
+        max-early-data: 0
+        early-data-header-name: ""
+    - name: 台湾节点1
+      type: ss
+      server: 211.99.115.183
+      port: 59443
+      network: ws
+      udp: true
+      alterId: 0
+      cipher: chacha20-ietf-poly1305
+      password: 6232e590-3a2c-428a-b8e9-9ce24fc7ee7b
+      skip-cert-verify: true
+      ws-opts:
+        path: /
+        headers:
+            Host: ""
+        max-early-data: 0
+        early-data-header-name: ""
+    - name: 巴西节点1
+      type: ss
+      server: 211.99.115.183
+      port: 10471
+      network: ws
+      udp: true
+      alterId: 0
+      cipher: chacha20-ietf-poly1305
+      password: 6232e590-3a2c-428a-b8e9-9ce24fc7ee7b
+      skip-cert-verify: true
+      ws-opts:
+        path: /
+        headers:
+            Host: ""
+        max-early-data: 0
+        early-data-header-name: ""
+    - name: 印度节点1
+      type: ss
+      server: 211.99.115.183
+      port: 51685
+      network: ws
+      udp: true
+      alterId: 0
+      cipher: chacha20-ietf-poly1305
+      password: 6232e590-3a2c-428a-b8e9-9ce24fc7ee7b
+      skip-cert-verify: true
+      ws-opts:
+        path: /
+        headers:
+            Host: ""
+        max-early-data: 0
+        early-data-header-name: ""
+    - name: 马来西亚节点1
+      type: ss
+      server: 211.99.115.184
+      port: 43668
+      network: ws
+      udp: true
+      alterId: 0
+      cipher: chacha20-ietf-poly1305
+      password: 6232e590-3a2c-428a-b8e9-9ce24fc7ee7b
       skip-cert-verify: true
       ws-opts:
         path: /
@@ -69,24 +453,119 @@ proxy-groups:
     - name: QIANLI
       type: select
       proxies:
-        - 到期时间:2025-06-09 11:54:20
-        - 重置时间:2025-06-10 23:59:59
-        - 剩余流量:10.0 GB
+        - 到期时间:2027-05-18 09:07:39
+        - 重置时间:2025-06-17 00:00:01
+        - 剩余流量:100.0 GB
+        - 香港节点1
+        - 香港节点2
+        - 香港节点3
+        - 香港节点4
+        - 香港节点5
+        - 香港节点6
+        - 日本节点1
+        - 日本节点2
+        - 美国节点1
+        - 美国节点2
+        - 新加坡节点1
+        - 新加坡节点2
+        - 新加坡节点3
+        - 新加坡节点4
+        - 德国节点1
+        - 德国节点2
+        - 德国节点3
+        - 德国节点4
+        - 德国节点5
+        - 韩国节点1
+        - 台湾节点1
+        - 巴西节点1
+        - 印度节点1
+        - 马来西亚节点1
       url: ""
       interval: 0
     - name: 自动选择
       type: url-test
       proxies:
-        - 到期时间:2025-06-09 11:54:20
-        - 重置时间:2025-06-10 23:59:59
-        - 剩余流量:10.0 GB
+        - 到期时间:2027-05-18 09:07:39
+        - 重置时间:2025-06-17 00:00:01
+        - 剩余流量:100.0 GB
+        - 香港节点1
+        - 香港节点2
+        - 香港节点3
+        - 香港节点4
+        - 香港节点5
+        - 香港节点6
+        - 日本节点1
+        - 日本节点2
+        - 美国节点1
+        - 美国节点2
+        - 新加坡节点1
+        - 新加坡节点2
+        - 新加坡节点3
+        - 新加坡节点4
+        - 德国节点1
+        - 德国节点2
+        - 德国节点3
+        - 德国节点4
+        - 德国节点5
+        - 韩国节点1
+        - 台湾节点1
+        - 巴西节点1
+        - 印度节点1
+        - 马来西亚节点1
       url: http://www.apple.com/library/test/success.html
       interval: 86400
     - name: 故障转移
       type: fallback
       proxies:
-        - 到期时间:2025-06-09 11:54:20
-        - 重置时间:2025-06-10 23:59:59
-        - 剩余流量:10.0 GB
+        - 到期时间:2027-05-18 09:07:39
+        - 重置时间:2025-06-17 00:00:01
+        - 剩余流量:100.0 GB
+        - 香港节点1
+        - 香港节点2
+        - 香港节点3
+        - 香港节点4
+        - 香港节点5
+        - 香港节点6
+        - 日本节点1
+        - 日本节点2
+        - 美国节点1
+        - 美国节点2
+        - 新加坡节点1
+        - 新加坡节点2
+        - 新加坡节点3
+        - 新加坡节点4
+        - 德国节点1
+        - 德国节点2
+        - 德国节点3
+        - 德国节点4
+        - 德国节点5
+        - 韩国节点1
+        - 台湾节点1
+        - 巴西节点1
+        - 印度节点1
+        - 马来西亚节点1
       url: http://www.apple.com/library/test/success.html
       interval: 7200
+
+rule-providers:
+  private:
+    type: http
+    behavior: domain
+    url: "https://api.apiooo.com/api/public/utils/getMirror/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/private.txt"
+    path: ./ruleset/private.yaml
+    interval: 86400
+
+
+rules:
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
+  - DOMAIN-SUFFIX,alipay.com,DIRECT
+  - DOMAIN-SUFFIX,qianli999.com,DIRECT
+  - DOMAIN-SUFFIX,apiooo.com,DIRECT
+  - DOMAIN-SUFFIX,apiooo9.com,DIRECT
+  - DOMAIN-SUFFIX,tktkto.com,DIRECT
+  - DOMAIN-SUFFIX,xiaoniu99.com,DIRECT
+  - DOMAIN-SUFFIX,xiaoniu999.com,DIRECT
+  - DOMAIN-SUFFIX,zhuivpn.com,DIRECT
+  - RULE-SET,private,DIRECT
+  - MATCH,DIRECT
