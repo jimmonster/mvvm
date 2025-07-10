@@ -352,6 +352,7 @@ rules:
   - DOMAIN-SUFFIX,zhuivpn.com,DIRECT
   - DOMAIN-SUFFIX,googleapis.com,QIANLI
   - DOMAIN-SUFFIX,google.com,QIANLI
+  - DOMAIN-SUFFIX,googleapis.cn,QIANLI
   - RULE-SET,lancidr,DIRECT
   - RULE-SET,private,DIRECT
   - RULE-SET,google,QIANLI
